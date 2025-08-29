@@ -71,17 +71,14 @@ A secure, end-to-end encrypted message sharing tool that prioritizes privacy. Sh
     
     ```env
     # Database
-    DATABASE_URL="mongodb://localhost:27017/phaeton"
-    NEXT_PUBLIC_DEFAULT_PASSWORD="Your Default Password for encrypting messages" 
-    
+    DATABASE_URL= <YOUR MONGODB DATABASE_URL>
+    NEXT_PUBLIC_DEFAULT_PASSWORD= <YOUR DEFAULT_PASSWORD>
     ```
     
 4.  **Set up the database**
     
     ```bash
-    npx prisma generate
-    npx prisma db push
-    
+    npm run db:dev
     ```
     
 5.  **Start the development server**
